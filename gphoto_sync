@@ -1,0 +1,7 @@
+#/bin/bash
+
+pushd ~
+
+picasawebsync.py -d ~/Bilder/ -v -c 5 --shrink -m syncUpload --purge --allowDelete remote -f both -s "*.ini, *.ORF, *.DNG, *.ARW"
+
+popd
